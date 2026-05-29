@@ -9,6 +9,7 @@ TagManager:
   - Blik
   - BlikRespawn
   - BallRespawn
+  - Ground
   layers:
   - Default
   - TransparentFX

@@ -32,11 +32,7 @@ public class BalCheck : MonoBehaviour
     {
         if (ballsInTrigger <= 0)
         {
-            GameObject[] balls = GameObject.FindGameObjectsWithTag("Ball");
-            if (balls.Length > 0)
-            {
-                Destroy(balls[0]);
-            }
+
             Instantiate(ballPrefab, respawn1.transform);
             Instantiate(ballPrefab, respawn2.transform);
             Instantiate(ballPrefab, respawn3.transform);
