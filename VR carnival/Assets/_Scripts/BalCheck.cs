@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BalCheck : MonoBehaviour
@@ -6,6 +7,10 @@ public class BalCheck : MonoBehaviour
     GameObject bal;
     BalRespawnRequirement brr;
 
+    [SerializeField] List<GameObject> Balls = new List<GameObject>();
+    [SerializeField] List<GameObject> blikken = new List<GameObject>();
+    [SerializeField] Transform[] blikRespawnPoints;
+    [SerializeField] GameObject blikPrefab;
     [SerializeField] GameObject ballPrefab;
     [SerializeField] GameObject respawn1;
     [SerializeField] GameObject respawn2;
@@ -22,6 +27,7 @@ public class BalCheck : MonoBehaviour
             {
                 ballsInTrigger++;
                 brr.wasChecked = true;
+                Balls.Add(bal);
             }
 
             Debug.Log("Balls found: ");
@@ -30,12 +36,23 @@ public class BalCheck : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (ballsInTrigger <= 0)
+        if ((Balls.Count - 1) <= 0)
         {
-
             Instantiate(ballPrefab, respawn1.transform);
             Instantiate(ballPrefab, respawn2.transform);
             Instantiate(ballPrefab, respawn3.transform);
+
+            foreach (GameObject blik in blikken)
+            {
+                blikken.Remove(blik);
+                Destroy(blik);
+                Balls.RemoveAll(ball => ball == null);
+            }
+            foreach(Transform blikTransform in blikRespawnPoints)
+            {
+                GameObject blik = Instantiate(blikPrefab, blikTransform.position, blikTransform.rotation);
+                blikken.Add(blik);
+            }
         }
     }
     private void OnTriggerExit(Collider other)

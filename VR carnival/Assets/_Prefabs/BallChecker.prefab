@@ -66,3 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9e90efc1bb1d94f883d47595bc2175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  ballPrefab: {fileID: 0}
+  respawn1: {fileID: 0}
+  respawn2: {fileID: 0}
+  respawn3: {fileID: 0}

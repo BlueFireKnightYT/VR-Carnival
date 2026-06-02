@@ -2239,12 +2239,12 @@ Transform:
   - {fileID: 3912903937642836360}
   - {fileID: 4158845675827640148}
   - {fileID: 855518420581164480}
+  - {fileID: 9066788112887156865}
   - {fileID: 5250451288954814559}
   - {fileID: 3673251755353606970}
   - {fileID: 2191290078530795803}
   - {fileID: 329930607655122187}
   - {fileID: 8582325701854584708}
-  - {fileID: 9066788112887156865}
   m_Father: {fileID: 3071489783406379625}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8407899121706563700
@@ -2952,6 +2952,18 @@ PrefabInstance:
       value: BallRespawn
       objectReference: {fileID: 0}
     - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.71557
       objectReference: {fileID: 0}
@@ -3027,6 +3039,18 @@ PrefabInstance:
     - target: {fileID: 6079620988885164344, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
       propertyPath: m_TagString
       value: BallRespawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3113,6 +3137,138 @@ PrefabInstance:
       propertyPath: ballPrefab
       value: 
       objectReference: {fileID: 6079620988885164344, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: blikPrefab
+      value: 
+      objectReference: {fileID: 3078454411464309027, guid: 21e115af2da3e984895d6bc7c3c93168, type: 3}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: blikken.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[0]'
+      value: 
+      objectReference: {fileID: 7694236580829986044}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[1]'
+      value: 
+      objectReference: {fileID: 4362674799671390835}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[2]'
+      value: 
+      objectReference: {fileID: 767417182195443823}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[3]'
+      value: 
+      objectReference: {fileID: 787504548337660413}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8512084535554500813}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1554076014722316397}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[6]'
+      value: 
+      objectReference: {fileID: 3555789439527330644}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[7]'
+      value: 
+      objectReference: {fileID: 551015255082547106}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[8]'
+      value: 
+      objectReference: {fileID: 8407899121706563700}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[9]'
+      value: 
+      objectReference: {fileID: 1151404368804770281}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[10]'
+      value: 
+      objectReference: {fileID: 6763531615323434718}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[11]'
+      value: 
+      objectReference: {fileID: 2571803721617800087}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[12]'
+      value: 
+      objectReference: {fileID: 2571803721617800087}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[13]'
+      value: 
+      objectReference: {fileID: 8775946900058988024}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikken.Array.data[14]'
+      value: 
+      objectReference: {fileID: 8988790220351110889}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: blikRespawnPoints.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3910479292931082142}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 95769271655582566}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8781334315187061678}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[3]'
+      value: 
+      objectReference: {fileID: 7281774740289847735}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1300332284301336733}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[5]'
+      value: 
+      objectReference: {fileID: 9043461171007719200}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[6]'
+      value: 
+      objectReference: {fileID: 3912903937642836360}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[7]'
+      value: 
+      objectReference: {fileID: 4158845675827640148}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[8]'
+      value: 
+      objectReference: {fileID: 855518420581164480}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[9]'
+      value: 
+      objectReference: {fileID: 9066788112887156865}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[10]'
+      value: 
+      objectReference: {fileID: 3673251755353606970}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[11]'
+      value: 
+      objectReference: {fileID: 2191290078530795803}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[12]'
+      value: 
+      objectReference: {fileID: 2191290078530795803}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[13]'
+      value: 
+      objectReference: {fileID: 329930607655122187}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: 'blikRespawnPoints.Array.data[14]'
+      value: 
+      objectReference: {fileID: 8582325701854584708}
     - target: {fileID: 5475751114659313715, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
       propertyPath: m_Name
       value: BallChecker
@@ -3182,6 +3338,18 @@ PrefabInstance:
     - target: {fileID: 6079620988885164344, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
       propertyPath: m_TagString
       value: BallRespawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 9163487395263219351, guid: 5c4ca42cc8dd30d40b73304b8eb7daed, type: 3}
       propertyPath: m_LocalPosition.x
