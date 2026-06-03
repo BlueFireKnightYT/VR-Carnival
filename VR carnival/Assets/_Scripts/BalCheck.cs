@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class BalCheck : MonoBehaviour
@@ -10,12 +11,13 @@ public class BalCheck : MonoBehaviour
     [SerializeField] List<GameObject> Balls = new List<GameObject>();
     [SerializeField] List<GameObject> blikken = new List<GameObject>();
     [SerializeField] Transform[] blikRespawnPoints;
-    [SerializeField] GameObject blikPrefab;
     [SerializeField] GameObject ballPrefab;
     [SerializeField] GameObject respawn1;
     [SerializeField] GameObject respawn2;
     [SerializeField] GameObject respawn3;
 
+
+    int currentBlik = 0;
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Ball"))
@@ -36,7 +38,8 @@ public class BalCheck : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if ((Balls.Count - 1) <= 0)
+        Balls.RemoveAll(ball => ball == null);
+        if ((Balls.Count) <= 0)
         {
             Instantiate(ballPrefab, respawn1.transform);
             Instantiate(ballPrefab, respawn2.transform);
@@ -44,15 +47,14 @@ public class BalCheck : MonoBehaviour
 
             foreach (GameObject blik in blikken)
             {
-                blikken.Remove(blik);
-                Destroy(blik);
-                Balls.RemoveAll(ball => ball == null);
+                Rigidbody blikRB = blik.GetComponent<Rigidbody>();
+                blikRB.linearVelocity = new Vector3(0, 0, 0);
+                blik.transform.rotation = blikRespawnPoints[currentBlik].rotation;
+                blik.transform.position = blikRespawnPoints[currentBlik].position;
+
+                currentBlik += 1;
             }
-            foreach(Transform blikTransform in blikRespawnPoints)
-            {
-                GameObject blik = Instantiate(blikPrefab, blikTransform.position, blikTransform.rotation);
-                blikken.Add(blik);
-            }
+            currentBlik = 0;
         }
     }
     private void OnTriggerExit(Collider other)

@@ -11,6 +11,7 @@ TagManager:
   - BallRespawn
   - Ground
   - PointSys
+  - BowlingBall
   layers:
   - Default
   - TransparentFX
