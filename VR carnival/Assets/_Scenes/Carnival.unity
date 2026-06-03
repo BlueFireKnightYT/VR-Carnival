@@ -1517,6 +1517,67 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6239881831769578202, guid: 7620a9788331a6246ae8adfb736053f5, type: 3}
+--- !u!1001 &1404737752801006417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0233
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.266
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.193
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767445286477614965, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239744454972245096, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.045000076
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938233835074994639, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
+      propertyPath: m_Name
+      value: BowlingBumpers
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 522fea32a9f499f40a3dfefe4a72feeb, type: 3}
 --- !u!1001 &2170734502497603227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1949,3 +2010,4 @@ SceneRoots:
   - {fileID: 7239911417636865531}
   - {fileID: 313451609}
   - {fileID: 2170734502497603227}
+  - {fileID: 1404737752801006417}
