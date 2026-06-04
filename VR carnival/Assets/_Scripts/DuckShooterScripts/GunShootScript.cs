@@ -12,11 +12,16 @@ public class GunShooter : MonoBehaviour
     public float bulletSpeed = 20f;
 
     [Header("XR Input")]
-    public InputActionProperty shootAction; // trigger voor XR (VR) controllers
+    public InputActionProperty shootActionRight; // trigger voor XR (VR) controller (RECHTS)
+    public InputActionProperty shootActionLeft; // Trigger voor XR (VR) Controller (LINKS)
 
     void Update()
     {
-        if (shootAction.action.WasPressedThisFrame())
+        if (shootActionRight.action.WasPressedThisFrame())
+        {
+            Shoot();
+        }
+        if (shootActionLeft.action.WasPressedThisFrame())
         {
             Shoot();
         }
@@ -30,16 +35,6 @@ public class GunShooter : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
             Rigidbody rb = bullet.GetComponent<Rigidbody>();
             rb.linearVelocity = shootPoint.forward * bulletSpeed;
-        }
-
-        // Raycast hit detection
-        if (Physics.Raycast(shootPoint.position, shootPoint.forward, out RaycastHit hit, 100f, hitMask))
-        {
-            DuckTarget duck = hit.collider.GetComponent<DuckTarget>();
-            if (duck != null)
-            {
-                duck.Hit();
-            }
         }
     }
 }

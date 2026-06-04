@@ -12,18 +12,19 @@ TagManager:
   - Ground
   - PointSys
   - BowlingBall
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - DUCKLAYERMASK
+  - DuckLayerMask
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Blik
+  - Ball
+  - BowlingBall
+  - Pins
+  - Bullet
   - 
   - 
   - 

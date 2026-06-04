@@ -14,11 +14,19 @@ public class DuckTarget : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            Hit();
+        }
+    }
     public void Hit()
     {
         rb.isKinematic = false; // duck falls over
         Invoke(nameof(Respawn), respawnTime);
+
+
     }
 
     void Respawn()

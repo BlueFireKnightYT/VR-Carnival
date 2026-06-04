@@ -70,7 +70,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 79121195a389e71439ff185828636479, type: 2}
     - target: {fileID: 919132149155446097, guid: 6a7da38524730124a8f672715d8986c3, type: 3}
       propertyPath: m_Name
-      value: Bowling_Ball
+      value: Bowling_Ball 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a7da38524730124a8f672715d8986c3, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a7da38524730124a8f672715d8986c3, type: 3}
+      propertyPath: m_TagString
+      value: BowlingBall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
