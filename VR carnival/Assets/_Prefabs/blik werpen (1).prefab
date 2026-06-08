@@ -3451,6 +3451,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 7127869660420825618}
     m_Modifications:
     - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
+      propertyPath: maxBalls
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751027557925089246, guid: accd6ab8dc4b9d34ebd0f1d69eae9cca, type: 3}
       propertyPath: respawn1
       value: 
       objectReference: {fileID: 5978357152038657351}

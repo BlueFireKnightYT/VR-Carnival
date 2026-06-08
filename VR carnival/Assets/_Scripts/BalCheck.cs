@@ -1,10 +1,8 @@
 using System.Collections.Generic;
-using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class BalCheck : MonoBehaviour
 {
-    int ballsInTrigger;
     GameObject bal;
     BalRespawnRequirement brr;
 
@@ -16,62 +14,58 @@ public class BalCheck : MonoBehaviour
     [SerializeField] GameObject respawn2;
     [SerializeField] GameObject respawn3;
 
-
     int currentBlik = 0;
+
+
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Ball"))
+        if (other.CompareTag("Ball") || other.CompareTag("BowlingBall"))
         {
             bal = other.gameObject;
             brr = bal.GetComponent<BalRespawnRequirement>();
 
             if (!brr.wasChecked)
             {
-                ballsInTrigger++;
                 brr.wasChecked = true;
                 Balls.Add(bal);
             }
-
-            Debug.Log("Balls found: ");
-            Debug.Log(ballsInTrigger);
         }
     }
-    private void FixedUpdate()
-    {
-        Balls.RemoveAll(ball => ball == null);
-        if ((Balls.Count) <= 0)
-        {
-            Instantiate(ballPrefab, respawn1.transform);
-            Instantiate(ballPrefab, respawn2.transform);
-            Instantiate(ballPrefab, respawn3.transform);
 
-            foreach (GameObject blik in blikken)
-            {
-                Rigidbody blikRB = blik.GetComponent<Rigidbody>();
-                blikRB.linearVelocity = new Vector3(0, 0, 0);
-                blik.transform.rotation = blikRespawnPoints[currentBlik].rotation;
-                blik.transform.position = blikRespawnPoints[currentBlik].position;
-
-                currentBlik += 1;
-            }
-            currentBlik = 0;
-        }
-    }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Ball"))
+        if (other.CompareTag("Ball") || other.CompareTag("BowlingBall"))
         {
             bal = other.gameObject;
             brr = bal.GetComponent<BalRespawnRequirement>();
 
             if (brr.wasChecked)
             {
-                ballsInTrigger--;
                 brr.wasChecked = false;
             }
-
-            Debug.Log("Balls found: ");
-            Debug.Log(ballsInTrigger);
         }
     }
+
+    private void FixedUpdate()
+    {
+        Balls.RemoveAll(ball => ball == null);
+
+        if (Balls.Count <= 0)
+        {
+            if (respawn1 != null) Instantiate(ballPrefab, respawn1.transform.position, respawn1.transform.rotation);
+            if (respawn2 != null) Instantiate(ballPrefab, respawn2.transform.position, respawn2.transform.rotation);
+            if (respawn3 != null) Instantiate(ballPrefab, respawn3.transform.position, respawn3.transform.rotation);
+            foreach (GameObject blik in blikken)
+            {
+                Rigidbody rb = blik.GetComponent<Rigidbody>();
+                blik.transform.position = blikRespawnPoints[currentBlik].position;
+                blik.transform.rotation = blikRespawnPoints[currentBlik].rotation;
+                rb.linearVelocity = Vector3.zero;
+                currentBlik++;
+            }
+
+            currentBlik = 0;
+        }
+    }
+
 }
